@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+     	font-family: Arial,sans-serif;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #000000;
+		margin: 0;
+		overflow: hidden;
+    }
+    .contenedor-principal-jcca{
+      width: 500px;
+      height: 900px;
+  margin: 0 auto;
+  background-color: red;
+  overflow: hidden;
+
+  
+  
+
+    }
+
+
+       .animacion-container-jcca {
+  flex: 3;
+  height: 550px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+ 
+}
+
+.animacion-track-jcca {
+  display: flex;
+  width: calc(8 * 600px);
+  height: 100%;
+  animation: scrollBanner 70s linear reverse infinite;
+}
+
+.animacion-track-jcca img {
+  width: 600px;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+  display: block;
+  border-radius: 0;
+}
+
+
+@keyframes scrollBanner {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-6 * 600px));
+  }
+}
+
+
+</style>
+<body>
+
+
+<div class="animacion-container-jcca">
+ <div class="animacion-track-jcca"> 
+<img src="im1.jpg" title="Producto A">
+<img src="im2.jpg" title="Producto B">
+<img src="im3.jpg" title="Producto C">
+<img src="im4.jpg" title="Producto D">
+<img src="im5.jpg" title="Producto E">
+<img src="im6.jpg" title="Producto F">
+<img src="im1.jpg" title="Producto A">
+<img src="im2.jpg" title="Producto B">
+
+
+ </div>
+
+
+
+ </div>
+
+</body>
+</html>
