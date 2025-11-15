@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Imagen con descripción</title>
+  <style>
+    body{
+      background-color: #000000;
+    }
+    .contenedor {
+      display: flex;
+      align-items: center;
+      max-width: 100%;
+      height: 80%;
+      margin: 40px auto;
+      background-color: #e0e0e0;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .imagen{
+     
+      overflow: hidden;
+            flex: 1;
+      width: 250px;
+      height: 1000px;
+      border-radius: 50px;
+      margin-right: 20px;
+        border: 1px solid black;
+    }
+
+    .descripcion {
+      flex: 2;
+      font-family: Arial, sans-serif;
+      color: #333;
+       
+    }
+
+    .descripcion h2 {
+      margin-top: 0;
+      color: #000000;
+     text-align: center;
+      font-size: 30px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .descripcion p {
+      line-height: 1.6;
+    }
+    
+
+    .Volver{
+      flex: 1;
+         height: 50px;
+         width: 200px;
+           margin: 40px auto;
+            
+          background-color: #000000;
+          border-radius: 30px;
+    float: right;
+    }
+
+    .Volver p  {
+      font-family: Arial, sans-serif;
+      color: #ffffff;
+       text-align: center;
+       
+       
+
+    }
+
+     .Volver a  {
+     text-decoration: none;
+
+    }
+
+
+    .izquierda{
+     border-radius: 30px;
+     background-color: #ffffff;
+        flex: 2;
+          
+    }
+    
+    
+/* --- Adaptación a móvil --- */
+@media (max-width: 768px) {
+
+  .contenedor {
+    flex-direction: column;   /* Imagen arriba, texto abajo */
+    height: auto;
+    padding: 15px;
+    margin: 20px 10px;
+    gap: 15px;
+  }
+
+  .imagen {
+    width: 100%;
+    height: auto;
+    max-height: none;
+    border-radius: 20px;
+    margin-right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* La imagen se ajusta correctamente SIN recortarse */
+  .imagen img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;  /* <- ADAPTAR SIN RECORTE */
+    border-radius: 20px;
+  }
+
+  .descripcion {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .descripcion h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .descripcion p {
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: justify;
+  }
+
+  .izquierda {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  .Volver {
+    width: 100%;
+    margin: 20px 0;
+    height: 45px;
+    float: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Volver p {
+    margin: 0;
+    font-size: 14px;
+  }
+}
+
+    
+  </style>
+</head>
+<body>
+
+  <div class="contenedor">
+    <div class="imagen">  <img src="https://i.pinimg.com/736x/43/af/75/43af752a2875a0d4459b2f0d0a2ca1fb.jpg" width="" height="990"> </div>
+   
+    <div class="izquierda">
+      <div class="Volver"> <a href="3pagina.html"><p>Volver </p></a>  </div>
+    <div class="descripcion">
+      <h2> Infancia De pun pun</h2>
+     <p>
+  La infancia de Punpun y Aiko estuvo marcada por el abandono, el dolor y la violencia emocional. <br>
+  Punpun creció en una familia rota: su padre era agresivo y su madre emocionalmente inestable. <br>
+  Desde pequeño aprendió a callar, a esconderse, a no molestar. Vivía en un silencio que lo devoraba por dentro, observando un mundo que no entendía y sintiéndose siempre fuera de lugar. <br><br>
+
+  Aiko, por su parte, vivía con una madre obsesiva, dominante y cruel. <strong>No era una madre: era una cárcel</strong>. <br>
+  La obligaba a seguir reglas absurdas, la controlaba hasta el mínimo detalle, y la hacía sentir que su valor dependía únicamente de su obediencia. <br>
+  Aiko creció deseando escapar, soñando con una vida lejos de esa casa envenenada. <br><br>
+
+  Cuando se conocieron, eran solo niños, pero ya cargaban cicatrices invisibles. <br>
+  En medio de su soledad, encontraron en el otro algo parecido a consuelo. <br>
+  <strong>Compartían heridas, aunque no sabían cómo sanarlas</strong>. <br>
+  Se entendían sin hablar mucho, como si reconocieran el dolor en la mirada del otro. <br><br>
+
+  Aiko hablaba de huir, de empezar de nuevo, y Punpun escuchaba como si fuera un secreto sagrado. <br>
+  Para él, Aiko no solo era una compañera: era la promesa de una vida mejor. <br>
+  Pero eran solo niños, rotos antes de tiempo, sin herramientas para protegerse, sin adultos que realmente los cuidaran. <br><br>
+
+  <strong>Su infancia no fue inocente</strong>: fue una batalla silenciosa por sobrevivir, por sentirse queridos, por no desaparecer. <br>
+  Y esa oscuridad que compartieron los unió para siempre, de formas tan profundas como dolorosas.
+</p>
+
+    </div>
+
+     </div>
+  </div>
+
+</body>
+</html>

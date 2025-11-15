@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Imagen con descripción</title>
+  <style>
+    body{
+      background-color: #000000;
+    }
+    .contenedor {
+      display: flex;
+      align-items: center;
+      max-width: 100%;
+      height: 80%;
+      margin: 40px auto;
+      background-color: #e0e0e0;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .imagen{
+     
+      overflow: hidden;
+            flex: 1;
+      width: 250px;
+      height: 1000px;
+      border-radius: 50px;
+      margin-right: 20px;
+        border: 1px solid black;
+    }
+
+    .descripcion {
+      flex: 2;
+      font-family: Arial, sans-serif;
+      color: #333;
+       
+    }
+
+    .descripcion h2 {
+      margin-top: 0;
+      color: #000000;
+     text-align: center;
+      font-size: 30px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .descripcion p {
+      line-height: 1.6;
+    }
+    
+
+    .Volver{
+      flex: 1;
+         height: 50px;
+         width: 200px;
+           margin: 40px auto;
+            
+          background-color: #000000;
+          border-radius: 30px;
+    float: right;
+    }
+
+    .Volver p  {
+      font-family: Arial, sans-serif;
+      color: #ffffff;
+       text-align: center;
+       
+       
+
+    }
+
+     .Volver a  {
+     text-decoration: none;
+
+    }
+
+
+    .izquierda{
+     border-radius: 30px;
+     background-color: #ffffff;
+        flex: 2;
+          
+    }
+    
+    
+
+    /* --- Adaptación a móvil --- */
+@media (max-width: 768px) {
+
+  .contenedor {
+    flex-direction: column;   /* Imagen arriba, texto abajo */
+    height: auto;
+    padding: 15px;
+    margin: 20px 10px;
+    gap: 15px;
+  }
+
+  .imagen {
+    width: 100%;
+    height: auto;
+    max-height: none;
+    border-radius: 20px;
+    margin-right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* La imagen se ajusta correctamente SIN recortarse */
+  .imagen img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;  /* <- ADAPTAR SIN RECORTE */
+    border-radius: 20px;
+  }
+
+  .descripcion {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .descripcion h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .descripcion p {
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: justify;
+  }
+
+  .izquierda {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  .Volver {
+    width: 100%;
+    margin: 20px 0;
+    height: 45px;
+    float: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Volver p {
+    margin: 0;
+    font-size: 14px;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="contenedor">
+    <div class="imagen">  <img src="https://i.pinimg.com/1200x/20/4a/17/204a1777532cddc548b42d9a9096f116.jpg" width="" height="1099"> </div>
+   
+    <div class="izquierda">
+      <div class="Volver"> <a href="3pagina.html"><p>Volver </p></a>  </div>
+    <div class="descripcion">
+      <h2> El retrato de sachi</h2>
+     <p>
+  Sachi fue una de las pocas personas en la vida de Punpun que intentó verlo realmente. <br>
+  No como el chico extraño, callado o dañado que todos evitaban, sino como un ser humano que merecía ser escuchado. <br>
+  Su presencia era firme, madura y directa, y eso sacudió el mundo interior de Punpun, que hasta entonces había vivido ahogado en culpas y fantasmas. <br><br>
+
+  En medio del caos, Sachi se convirtió en una especie de refugio inesperado. <br>
+  Alguien que no intentaba “arreglarlo”, sino empujarlo a enfrentarse a sí mismo. <br>
+  Y cuando decidió retratarlo, no lo hizo con compasión, ni con lástima. Lo hizo con sinceridad brutal. <br>
+  <strong>Ese retrato fue un espejo</strong>: no el Punpun que él quería ser, ni el que los demás imaginaban, sino el que era en realidad. <br><br>
+
+  Sachi dibujó a Punpun con toda su tristeza, su desesperación, su rabia y su vacío. <br>
+  Fue la primera vez que alguien puso en papel lo que él no podía decir con palabras. <br>
+  No era una imagen bonita, ni heroica, pero sí auténtica. Y eso lo conmovió más que cualquier gesto superficial. <br><br>
+
+  <strong>Para Punpun, ese dibujo fue una bofetada y un abrazo al mismo tiempo</strong>. <br>
+  Lo confrontó con su oscuridad, pero también le dio una prueba de que existía, de que alguien lo había visto de verdad. <br>
+  En un mundo que lo ignoraba o deformaba, el retrato de Sachi fue una de las pocas veces en que su alma quedó al descubierto, sin filtros. <br><br>
+
+  Y aunque su relación no fue perfecta ni eterna, el gesto de Sachi dejó una marca profunda: <strong>ella no lo salvó, pero le mostró que aún era posible ser entendido</strong>.
+</p>
+
+    </div>
+
+     </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OYASUMI PUNPUN おやすみ プンプン</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+
+<style>
+  /* --- Espaciado entre secciones (arriba y abajo) --- */
+.MenuPersonajes-jcca,
+.cuadros-flex-jcca,
+.cuadros-flex-horizontal-jcca,
+.main-2-jcca,
+.cuadros-flex-jcca2 {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+}
+
+
+.MenuPersonajes-jcca{
+font-size: 20px;
+font-weight: bold;
+	    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	    margin-bottom: 10px;
+			padding: 30px;
+      margin: 10px;
+		
+			background-color: #ffffff;
+      text-align: center;
+          border-radius: 30px;
+	       
+
+}
+
+.MenuPersonajes-jcca ul {
+
+	list-style: none;
+  margin-bottom: 0px;
+	padding: 0;
+  margin: 0;
+	background-color: #ffffff;
+	display: flex;
+	justify-content: center;
+  width: 895px;
+	height: 100px;
+	overflow: hidden;
+      border-radius: 30px;
+}
+
+.MenuPersonajes-jcca a {
+  margin: 0;
+
+	display: block;
+	color: rgb(0, 0, 0);
+	text-align: center;
+	padding: 20px 20px;
+	text-decoration: none;
+	transition: background-color 0.3s ease, color 0.3s ease;
+      border-radius: 30px;
+}
+
+.MenuPersonajes-jcca a:hover {
+	background-color: #000000 ;
+	color: #ff0000;
+  margin: 2px;
+
+      border-radius: 30px;
+}
+ 
+.cuadros-flex-jcca{
+    
+overflow: hidden;
+  flex: 1;
+    padding: 0;
+margin: 0;
+display: flex;
+gap: 10px;
+}
+.cuadros-flex-jcca{
+
+overflow: hidden;
+  
+    padding: 0;
+margin: 0;
+display: flex;
+gap: 10px;
+
+}
+
+.cuadros-flex-horizontal-jcca{
+
+overflow: hidden;
+  flex: 1;
+    padding: 0;
+margin: 0;
+display: flex;
+gap: 10px;
+flex-direction: column;
+
+}
+
+.cuadros-flex-horizontal-jcca img {
+
+    border: 2px solid black;
+}
+
+
+.main-2-jcca {
+ 
+  display: flex;
+  gap: 20px;
+  height: 1800px;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.cuadros-flex-jcca2 {
+   
+overflow: hidden;
+  
+padding: 0;
+margin: 0;
+display: flex;
+gap: 10px;
+
+}
+
+.volver-jcca{
+  padding: 10px 20px;
+  background-color: #000000;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  float: right;
+ gap: 20px;
+}
+
+.volver-jcca a{
+text-decoration: none;
+  color: white;
+
+
+}
+
+  /* --- Adaptación a móvil: mantener estructura horizontal --- */
+@media (max-width: 768px) {
+
+  /* Menú de personajes */
+  .MenuPersonajes-jcca ul {
+    width: 100%;
+    overflow-x: auto;
+    justify-content: flex-start;
+    gap: 5px;
+    padding: 0 5px;
+  }
+
+  .MenuPersonajes-jcca a {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  /* Main-2: contenedor horizontal con scroll */
+  .cuadros-flex-jcca {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;  /* scroll horizontal */
+    gap: 10px;
+    padding: 0 5px;
+  }
+
+  /* Bloques de personajes (imagen + texto) */
+  .cuadros-flex-horizontal-jcca {
+    display: flex;
+    flex-direction: column; /* imagen arriba, texto abajo dentro del bloque */
+    flex: 0 0 250px;        /* ancho fijo para que quepan en pantalla y scroll */
+    gap: 5px;
+  }
+
+  .cuadros-flex-horizontal-jcca img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .titulo-bonito-jcca {
+    font-size: 16px;
+  }
+
+  .texto-bonito-jcca {
+    font-size: 12px;
+    padding: 4px;
+  }
+
+  .volver-jcca {
+    padding: 6px 10px;
+    font-size: 12px;
+    float: none;
+    text-align: center;
+  }
+
+  /* Ajuste general de altura */
+  .main-2-jcca {
+    height: auto;
+    gap: 15px;
+  }
+}
+
+
+
+
+
+/* --- Adaptación a móvil: MenuPersonajes-jcca --- */
+@media (max-width: 768px) {
+
+  .MenuPersonajes-jcca {
+    padding: 10px 5px;
+    margin: 5px 0;
+    font-size: 16px;
+    text-align: left; /* mejor para scroll horizontal */
+  }
+
+  .MenuPersonajes-jcca ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;   /* no apilar */
+    overflow-x: auto;    /* scroll horizontal */
+    gap: 5px;
+    padding: 0 5px;
+    scrollbar-width: thin; /* Firefox */
+  }
+
+  .MenuPersonajes-jcca ul::-webkit-scrollbar { /* Chrome, Edge, Safari */
+    height: 6px;
+  }
+
+  .MenuPersonajes-jcca ul::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 3px;
+  }
+
+  .MenuPersonajes-jcca a {
+    padding: 8px 12px;
+    font-size: 14px;
+    white-space: nowrap; /* evita que el texto se rompa */
+  }
+}
+
+</style>
+
+<body>
+
+  <a name="volver"></a>
+  <div id="contenedor-jcca">
+
+    <header>
+         <div class="cuadros-jcca "  style="flex: 1;">
+        <img src="https://i.pinimg.com/736x/46/10/5f/46105fa9d7f86f31c502a19857b1ae04.jpg" width="200" height="200">
+    </div>
+
+       <div class="banner-container-jcca"> 
+  <div class="banner-track-jcca"> 
+    <img src="imagen1.jpg" title="Producto A">
+    <img src="imagen2.png" title="Producto B">
+    <img src="imagen3.jpeg" title="Producto C">
+    <img src="imagen4.jpg" title="Producto D">
+    <img src="imagen5.jpg" title="Producto E">
+    <img src="imagen6.jpg" title="Producto F">
+    <img src="imagen1.jpg" title="Producto A">
+    <img src="imagen2.png" title="Producto B">
+  </div>
+</div>
+
+
+    <div class="cuadros-jcca "style="flex: 1;">
+        <img src="https://i.pinimg.com/736x/2b/96/f7/2b96f7c27b6be8ff490df6164a8bd3bc.jpg" width="200" height="200px" >
+    </div>
+    
+    </header>
+
+    <nav class="Menu-jcca">
+      <ul>
+        <li> <a href="index.html">INCIO</a> </li>
+		<li> <a href="1pagina.html">PERSONAJES</a> </li>
+		  <li> <a href="2pagina.html">TOMOS</a> </li>
+		<li> <a href="3pagina.html">GALERIA</a> </li>
+	   <li> <a href="4pagina.html">CONTACTO</a> </li>
+
+      </ul>
+    </nav>
+
+
+
+
+
+<div class="main-2-jcca" style=" flex-direction:column; " >
+   
+<div class="cuadros-flex-jcca2 " style="flex: 1;"> <nav class="MenuPersonajes-jcca"> 
+   
+  <ul> 
+         <li> <a href="#pun">Pun Pun</a></li>
+         <li>  <a href="#aiko">AIKO TANAKA</a> </li>
+         <li> <a href="#sachi">Sachi Nanjo</a></li>
+          <li> <a href="#Yuuichi"> Yuuichi</a></li>
+             <li> <a href="#Seki"> Seki</a></li>
+                <li> <a href="#Shimizu">  Shimizu</a></li>
+        </ul>
+      
+        
+        </nav> </div>
+
+
+       
+<div class="cuadros-flex-jcca" style="flex:8"> 
+
+  <div class="cuadros-flex-horizontal-jcca" style="flex: 2;">
+
+    <div class="cuadros-jcca"style="flex: 1;"> 
+        <img src="https://i.pinimg.com/736x/da/b8/ab/dab8ab4868737d6873742657d447b086.jpg"
+         height="290" width="300"> </div>
+
+    <div class="cuadros-jcca"style="flex: 1;">
+      <img src="https://i.pinimg.com/736x/0e/32/51/0e32517f9d7914574ba05e8cd86bac2c.jpg" height="300" width="300"> </div>
+      
+        <div class="cuadros-jcca"style="flex: 1;">
+          <img src="https://i.pinimg.com/736x/ca/03/21/ca0321d5d2f9433110b3183c92284751.jpg " height="300" width="300"> 
+        </div>
+
+
+       <div class="cuadros-jcca" style="flex: 1;">
+     <img src="https://i.pinimg.com/736x/8b/2b/10/8b2b1085d52cb2a28fe041f5dfcaa5e0.jpg" >
+          </div>
+
+           <div class="cuadros-jcca" style="flex: 1;">
+            <img src="https://i.pinimg.com/736x/ee/fa/eb/eefaebdd70b6753d2ab0ce75f3290d43.jpg" alt="" height="300" width="300">
+          </div>
+
+           <div class="cuadros-jcca" style="flex: 1;">
+            <img src="https://i.pinimg.com/736x/40/1e/91/401e91f228b8fac6a766f0f06f077ff6.jpg" alt="" height="300" width="300">
+          </div>
+
+    
+  </div>
+
+
+  <div class="cuadros-flex-horizontal-jcca"style="flex: 5;">
+
+
+     <div class="cuadros-jcca"style="flex: 1;">
+         <div class="titulo-bonito-jcca"><a name="pun">Pun Pun Onodera</a></div>
+         <div class="texto-bonito-jcca">Punpun es la 
+          representación de Asano‘El ego en el manga,
+           que sobrevive, experimenta experiencias, se ve
+            obligado a relacionarse con el mundo exterior y está 
+            subyugado por las contradicciones de la sociedad en la
+             que no logra integrarse. Utilicé verbos pasivos a propósito,
+              porque Punpun es un personaje pasivo, sufre pasivamente todo 
+              lo que el destino le atrae. </div>  
+            <div class="volver-jcca ">  <a href="#volver">volver</a>  
+          </div>
+
+
+         </div>
+
+     <div class="cuadros-jcca"style="flex: 1;"> 
+ <div class="titulo-bonito-jcca">  <a name="aiko">AIKO TANAKA</a></div>
+      <div class="texto-bonito-jcca">Aiko Tanaka es el personaje principal de Oyasumi،Punpun. Simplemente porque es ella quien teje el hilo de la trama. No es casualidad que Asano lo compara con Vega, la
+         estrella más brillante del mundo Triángulo de verano. </div>
+        <div class="volver-jcca ">  <a href="#volver">volver</a>   </div> 
+     </div>
+
+
+ 
+
+        <div class="cuadros-jcca"style="flex: 1;"> 
+
+       <div class="titulo-bonito-jcca"><a name="sachi">Sachi Nanjo</a></div>
+ <div class="texto-bonito-jcca"> Sachi es el tercer y último personaje que cierra, 
+  como la estrella Deneb, el triángulo de verano de Asano‘s soul. 
+  Sachi representa metafóricamente la relación que el autor tiene con la
+   profesión de mangaka; mostrando al lector no solo su pasión por dibujar 
+   manga, sino también todas las contradicciones y dificultades con las que se 
+   enfrentó durante su carrera.</div>
+  
+  <div class="volver-jcca ">  <a href="#volver">volver</a>   </div> 
+        </div>
+
+
+         <div class="cuadros-jcca"style="flex: 1;"> 
+          
+
+           <div class="titulo-bonito-jcca"><a name="Yuuichi">Yuuichi</a></div>
+ <div class="texto-bonito-jcca"> Tío de Punpun, Yuuichi es una figura adulta ambigua. Aunque se preocupa
+   sinceramente por su sobrino, también está lleno de
+    contradicciones y conflictos internos. Su pasado difícil 
+    y sus decisiones cuestionables lo convierten en un reflejo de 
+    lo que espera a Punpun en la adultez. Aun así, trata de ser un 
+    soporte, aunque muchas veces fracasa en ese intento</div>
+
+       <div class="volver-jcca ">  <a href="#volver">volver</a>   </div> 
+        </div>
+
+           <div class="cuadros-jcca"style="flex: 1;"> 
+          
+
+             <div class="titulo-bonito-jcca"><a name="Seki">Seki</a></div>
+ <div class="texto-bonito-jcca"> Amigo de la infancia de Punpun, Seki es un joven rebelde que crece en un entorno familiar difícil. A pesar de su apariencia dura, guarda una fuerte carga emocional por una tragedia de su pasado. Su historia se entrelaza con la de Shimizu y muestra otro camino posible dentro del mismo mundo roto.
+
+.</div>
+
+
+       <div class="volver-jcca ">  <a href="#volver">volver</a>   </div> 
+        </div>
+          
+         <div class="cuadros-jcca"style="flex: 1;"> 
+          
+       
+
+           <div class="titulo-bonito-jcca"><a name="Shimizu">Shimizu</a></div>
+ <div class="texto-bonito-jcca"> Shimizu es un niño que sufre de inestabilidad mental, muchas veces atrapado entre visiones místicas y la realidad. Aunque es un personaje secundario, representa el impacto de la presión social, el abandono y la desesperación infantil. Su percepción extraña del mundo sirve como espejo de la locura que puede surgir cuando no hay amor ni guía.</div>
+
+
+ <div class="volver-jcca ">  <a href="#volver">volver</a>   </div>              
+
+        </div>
+          
+
+
+  </div>
+</div>
+
+        
+      
+     </div>
+
+
+
+
+    <nav>
+      <div class="FRASES-jcca"></div>
+    </nav>
+
+    <div class="separar-jcca"></div>
+
+    <footer>
+    <p style="text-align: center; color: white;">&copy; 2025 Mi Sitio Web. Todos los derechos reservados Oyasumi،Punpun</p>
+  </footer>
+  </div>
+</body>
+</html>

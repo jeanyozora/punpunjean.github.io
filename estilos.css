@@ -1,0 +1,412 @@
+body {
+  background-color: white;
+}
+
+
+
+.Menu-jcca {
+  margin-bottom: 10px;
+  padding: 0px;
+  border-radius: 20px;
+  background-color: #2b2a2a;
+  height: 70px;
+}
+
+.Menu-jcca ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  max-width: 100%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.Menu-jcca li {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.Menu-jcca a {
+   font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  padding: 0 20px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 20px;
+}
+
+.Menu-jcca a:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+nav {
+  
+  border-radius: 10px;
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(0, 0, 0);
+  height: 80px;
+  width: 1000px; /* ¡Agrega px aquí! */
+  margin-bottom: 20px;
+  border: 1px solid black;
+   margin: 0 auto;
+  max-width: 100%;
+  margin-bottom: 20px;
+  
+}
+
+#contenedor-jcca {
+  width: 1000px;
+  margin: 0 auto;
+     max-width: 100%;
+    
+
+}
+
+
+
+
+header {
+
+  display: flex;
+  gap: 20px;
+  height: 200px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+    
+}
+
+
+main {
+  display: flex;
+  gap: 20px;
+  height: 800px;
+  margin-bottom: 20px;
+}
+
+
+aside {
+  height: 700px;
+  width: 1000;
+}
+
+section {
+  flex: 1;
+  
+  height: auto;
+
+  margin: 0;
+  padding: 0;
+    overflow: hidden;
+    display: flex;
+}
+
+footer {
+  border-radius: 10px;
+  background-color: rgb(0, 0, 0);
+  height: 50px;
+  width: 1000;
+  border: 1px solid white;
+ 
+  
+}
+
+.cuadros-jcca {
+
+  overflow: hidden;
+  flex: 1;
+  padding: 0;
+  margin: 0;
+}
+
+.izquierda-jcca {
+  border-radius: 10px;
+  overflow: hidden;
+  flex-direction: column;
+  display: flex;
+  flex: 1;
+  border: 1px solid black;
+  padding: 0;
+  background-color: black;
+  gap: 10px;
+}
+
+.centro-jcca {
+  border-radius: 10px;
+  overflow: hidden;
+  flex: 3;
+  flex-direction: column;
+  display: flex;
+  gap: 10px;
+}
+
+.derecha-jcca {
+  border-radius: 10px;
+  overflow: hidden;
+  flex-direction: column;
+  display: flex;
+  flex: 1;
+  border: 1px solid black;
+  padding: 0;
+  background-color: black;
+  gap: 10px;
+}
+
+.FRASES-jcca {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  font-size: 19px;
+  color: white;
+  font-weight: bold;
+  background-color: #000000;
+  border-radius: 10px;
+  
+}
+
+.texto-bonito-jcca {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  color: #333;
+  line-height: 1.6;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-left: 4px solid #000000;
+  border-right: 4px solid #000000;
+  border-radius: 10px;
+  margin: 0px 0;
+}
+
+.titulo-bonito-jcca {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  margin: 5px 0;
+  padding: 0px;
+   background-color: #f2f2f2;;
+  border-bottom: 5px solid #000000;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+
+
+    .banner-container-jcca {
+  flex: 3;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  border: 1px solid black;
+}
+
+.banner-track-jcca {
+  display: flex;
+  width: calc(8 * 600px);
+  height: 100%;
+  animation: scrollBanner 60s linear infinite;
+}
+
+.banner-track-jcca img {
+  width: 600px;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+  display: block;
+  border-radius: 0;
+}
+
+
+@keyframes scrollBanner {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-6 * 600px));
+  }
+}
+
+
+
+
+
+
+
+
+/* Desktop */
+.Menu-jcca ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* horizontal */
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.Menu-jcca a {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  padding: 0 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.Menu-jcca a:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Mobile: solo achicar la navegación manteniendo horizontal */
+@media (max-width: 768px) {
+  .Menu-jcca ul {
+    gap: 5px; /* reduce espacio entre items */
+    padding: 0 5px; /* margen interno */
+    overflow-x: auto; /* permite deslizar horizontal si no cabe */
+  }
+
+  .Menu-jcca a {
+    padding: 5px 10px; /* achica botones */
+    font-size: 14px; /* letras más pequeñas */
+    white-space: nowrap; /* evita que se rompa el texto */
+  }
+}
+
+
+
+
+/* --- Móvil: cuerpo --- */
+@media (max-width: 768px) {
+
+  /* Header: ocultar imágenes laterales, mantener banner intacto */
+  header .cuadros-jcca:first-child,
+  header .cuadros-jcca:last-child {
+    display: none;
+  }
+
+  header {
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+  }
+
+  /* Main: columnas se apilan verticalmente */
+  main {
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .izquierda-jcca,
+  .centro-jcca,
+  .derecha-jcca {
+    flex: 1;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .cuadros-jcca {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* Imágenes (solo del cuerpo, no banner) */
+  main img, .izquierda-jcca img, .centro-jcca img, .derecha-jcca img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Textos */
+  .titulo-bonito-jcca {
+    font-size: 20px;
+  }
+
+  .texto-bonito-jcca {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  /* Footer */
+  footer {
+    width: 100%;
+    height: auto;
+    line-height: normal;
+    padding: 10px 0;
+  }
+
+}
+/* --- Banner móvil: adaptamos contenedor a altura de las imágenes --- */
+@media (max-width: 768px) {
+
+  /* Header: columna y ocultar imágenes laterales */
+  header {
+    flex-direction: column;
+    height: auto; /* deja que el contenido defina la altura */
+    gap: 0;       /* eliminamos gap para que no haya espacio extra */
+    align-items: stretch; /* banner ocupa todo el ancho disponible */
+  }
+
+  header .cuadros-jcca:first-child,
+  header .cuadros-jcca:last-child {
+    display: none; /* ocultar imágenes laterales */
+  }
+
+  /* Banner */
+  .banner-container-jcca {
+    height: auto;   /* se ajusta a la altura de las imágenes */
+    max-height: 150px; /* limita la altura si quieres */
+  }
+
+  .banner-track-jcca img {
+    height: 150px; /* todas las imágenes del banner se ajustan */
+    width: auto;   /* mantiene proporción */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

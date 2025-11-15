@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Imagen con descripción</title>
+  <style>
+    body{
+      background-color: #000000;
+    }
+    .contenedor-jcca {
+      display: flex;
+      align-items: center;
+      max-width: 100%;
+      height: 80%;
+      margin: 40px auto;
+      background-color: #e0e0e0;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .imagen-jcca {
+     
+      overflow: hidden;
+            flex: 1;
+      width: 250px;
+      height: 1000px;
+      border-radius: 50px;
+      margin-right: 20px;
+        border: 1px solid black;
+    }
+
+    .descripcion-jcca {
+      flex: 2;
+      font-family: Arial, sans-serif;
+      color: #333;
+       
+    }
+
+    .descripcion-jcca h2 {
+      margin-top: 0;
+      color: #000000;
+     text-align: center;
+      font-size: 30px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .descripcion-jcca p {
+      line-height: 1.6;
+    }
+    
+
+    .Volver-jcca{
+      flex: 1;
+         height: 50px;
+         width: 200px;
+           margin: 40px auto;
+            
+          background-color: #000000;
+          border-radius: 30px;
+    float: right;
+    }
+
+    .Volver-jcca p  {
+      font-family: Arial, sans-serif;
+      color: #ffffff;
+       text-align: center;
+       
+       
+
+    }
+
+     .Volver-jcca a  {
+     text-decoration: none;
+
+    }
+
+
+    .izquierda-jcca{
+     border-radius: 30px;
+     background-color: #ffffff;
+        flex: 2;
+          
+    }
+    
+    
+@media (max-width: 768px) {
+
+  .contenedor-jcca {
+    flex-direction: column;   /* Imagen arriba, texto abajo */
+    height: auto;
+    padding: 15px;
+    margin: 20px 10px;
+    gap: 15px;
+  }
+
+  .imagen-jcca {
+    width: 100%;
+    height: auto;
+    max-height: none;         /* Para que no limite altura */
+    border-radius: 20px;
+    margin-right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* La IMAGEN interna se adapta sin recortarse */
+  .imagen-jcca img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;      /* ADAPTAR SIN RECORTAR */
+    border-radius: 20px;
+  }
+
+  .descripcion-jcca {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .descripcion-jcca h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .descripcion-jcca p {
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: justify;
+  }
+
+  .izquierda-jcca {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  .Volver-jcca {
+    width: 100%;
+    margin: 20px 0;
+    height: 45px;
+    float: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Volver-jcca p {
+    margin: 0;
+    font-size: 14px;
+  }
+}
+
+    
+  </style>
+</head>
+<body>
+
+  <div class="contenedor-jcca">
+    <div class="imagen-jcca">  <img src="https://i.pinimg.com/736x/ca/cc/09/cacc09a06f2ff1cf680c0099faf7e69b.jpg" width="" height="1310"> </div>
+   
+    <div class="izquierda-jcca">
+      <div class="Volver-jcca"> <a href="3pagina.html"><p>Volver </p></a>  </div>
+    <div class="descripcion-jcca">
+      <h2> El Reencuentro de Pupun y Aiko</h2>
+     <p>Después de muchos años separados por la distancia y los caminos de la vida, Pupun y Aiko finalmente se reencontraron una tarde tranquila, cuando el sol comenzaba a esconderse entre los árboles. No hubo palabras al principio, solo una mirada larga, llena de recuerdos, nostalgia y una chispa que nunca se había apagado.
+
+Aiko llevaba consigo el mismo lazo rosa que solía usar cuando jugaban en el bosque, y Pupun aún conservaba esa expresión curiosa y noble que lo hacía único. Aunque el tiempo había pasado, ambos sintieron que el lazo entre ellos seguía intacto. <br>
+
+<strong>—"Pensé que ya no volveríamos a vernos"  </strong><br>
+—susurró Aiko, con la voz quebrada. <br>
+
+ <strong>—"Yo nunca dejé de buscarte" </strong> <br>
+—respondió Pupun, con una sonrisa suave. <br>
+
+El abrazo que siguió pareció detener el tiempo. No importaban las cicatrices del pasado ni los años perdidos. En ese momento, lo único que importaba era que se tenían de nuevo. <br>
+
+El reencuentro de Pupun y Aiko marcó el inicio de una nueva historia, una segunda oportunidad para reír, soñar y construir un nuevo capítulo… juntos.</p>
+    </div>
+
+     </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Imagen con descripción</title>
+  <style>
+    body{
+      background-color: #000000;
+    }
+    .contenedor {
+      display: flex;
+      align-items: center;
+      max-width: 100%;
+      height: 80%;
+      margin: 40px auto;
+      background-color: #e0e0e0;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .imagen{
+     
+      overflow: hidden;
+            flex: 1;
+      width: 250px;
+      height: 1000px;
+      border-radius: 50px;
+      margin-right: 20px;
+        border: 1px solid black;
+    }
+
+    .descripcion {
+      flex: 2;
+      font-family: Arial, sans-serif;
+      color: #333;
+       
+    }
+
+    .descripcion h2 {
+      margin-top: 0;
+      color: #000000;
+     text-align: center;
+      font-size: 30px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .descripcion p {
+      line-height: 1.6;
+    }
+    
+
+    .Volver{
+      flex: 1;
+         height: 50px;
+         width: 200px;
+           margin: 40px auto;
+            
+          background-color: #000000;
+          border-radius: 30px;
+    float: right;
+    }
+
+    .Volver p  {
+      font-family: Arial, sans-serif;
+      color: #ffffff;
+       text-align: center;
+       
+       
+
+    }
+
+     .Volver a  {
+     text-decoration: none;
+
+    }
+
+
+    .izquierda{
+     border-radius: 30px;
+     background-color: #ffffff;
+        flex: 2;
+          
+    }
+    
+    
+/* --- Adaptación a móvil --- */
+@media (max-width: 768px) {
+
+  .contenedor {
+    flex-direction: column;   /* Imagen arriba, texto abajo */
+    height: auto;
+    padding: 15px;
+    margin: 20px 10px;
+    gap: 15px;
+  }
+
+  .imagen {
+    width: 100%;
+    height: auto;
+    max-height: none;
+    border-radius: 20px;
+    margin-right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* La imagen se ajusta correctamente SIN recortarse */
+  .imagen img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;  /* <- ADAPTAR SIN RECORTE */
+    border-radius: 20px;
+  }
+
+  .descripcion {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .descripcion h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .descripcion p {
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: justify;
+  }
+
+  .izquierda {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  .Volver {
+    width: 100%;
+    margin: 20px 0;
+    height: 45px;
+    float: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Volver p {
+    margin: 0;
+    font-size: 14px;
+  }
+}
+
+    
+  </style>
+</head>
+<body>
+
+  <div class="contenedor">
+    <div class="imagen">  <img src="https://i.pinimg.com/736x/11/f4/9a/11f49ab0e94fbcec3e1e1fb7fb00fcd5.jpg" width="" height="1200"> </div>
+   
+    <div class="izquierda">
+      <div class="Volver"> <a href="3pagina.html"><p>Volver </p></a>  </div>
+    <div class="descripcion">
+      <h2> Te conozco</h2>
+    <p>
+  La relación entre Aiko y Punpun es todo menos simple. <br>
+  Desde la infancia compartieron momentos que quedaron grabados en lo más profundo de sus recuerdos. <br>
+  En aquellos días, su vínculo parecía inocente, casi ingenuo, pero con el paso del tiempo se volvió más intenso, más confuso, y a la vez más importante. <br><br>
+
+  Aiko fue para Punpun una mezcla de esperanza y dolor, una presencia que lo impulsaba a soñar pero también lo enfrentaba a su propia oscuridad. <br>
+  No eran perfectos, ni pretendían serlo, pero había algo en su conexión que trascendía las palabras. <br>
+  <strong>Cuando estaban juntos, el mundo parecía detenerse</strong>, y aunque el silencio a veces pesaba más que cualquier conversación, en ese silencio había verdad. <br><br>
+
+  Las decisiones que tomaron los alejaron, pero nunca rompieron del todo ese lazo invisible que los unía. <br>
+  El reencuentro entre ambos no fue solo un momento nostálgico, sino un cruce de almas que aún se reconocían, a pesar del daño, del miedo, y de las heridas no cerradas. <br><br>
+
+  <strong>Amarse no fue fácil, pero fue real</strong>. <br>
+  En un mundo que parecía desmoronarse a su alrededor, Aiko y Punpun fueron, por un instante, lo único que tenía sentido.
+</p>
+
+    </div>
+
+     </div>
+  </div>
+
+</body>
+</html>
